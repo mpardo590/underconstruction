@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import UnderConstruction from 'react-under-construction';
+import 'react-under-construction/build/css/index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <UnderConstruction
+    background={{
+      image: 'https://static.pexels.com/photos/259698/pexels-photo-259698.jpeg',
+      textColor: '#fff',
+      overlay: {
+        color: '#000',
+        opacity: '.5'
+      }
+    }}
+    logo={{
+      src: 'https://image.ibb.co/b7guP5/Rubbby_without_text.png',
+      alt: 'alt text'
+    }}
+    title={{
+      text: 'Wondrous Look Makeup & Microblading'
+    }}
+    description={{
+      text: 'Our website is under construction. We\'ll be here soon, subscribe to be notified',
+      style: {
+        maxWidth: '440px',
+      }
+    }}
+    links={[
+      {
+        url: 'https://www.facebook.com/wondrouslook/',
+        image: 'https://image.flaticon.com/icons/svg/220/220200.svg',
+      },
+      {
+        url: 'https://www.instagram.com/wondrouslookmakeup/',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/200px-Instagram_logo_2016.svg.png',
+      },
+      {
+        url: 'mailto:info@wondrouslook.com',
+        image: 'https://image.flaticon.com/icons/svg/321/321817.svg',
+      },
+    ]}
+  />
+);
 
 export default App;
