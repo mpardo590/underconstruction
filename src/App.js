@@ -20,7 +20,7 @@ const App = () => (
       text: 'Wondrous Look Makeup & Microblading'
     }}
     description={{
-      text: 'Our website is under construction. We\'ll be here soon, subscribe to be notified',
+      text: 'Our website is under construction. We\'ll be here soon.',
       style: {
         maxWidth: '440px',
       }
